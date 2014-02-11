@@ -18,7 +18,7 @@ Overview
 Daenerys is a trading algorithm written in C# using the [TradingMotion SDK] development tools (there is a [VB.net] port too).
 
 ![Elite OHLC example chart](markdown_files/Elite_OHLC.png)
-<sub>__Image footnote:__ Example of Tyrion OHLC financial chart showing some automatic trades</sub>
+<sub>__Image footnote:__ Example of Daenerys OHLC financial chart showing some automatic trades</sub>
 
 The strategy code is all contained in [Daenerys.cs], including a default parameter combination.
 
@@ -39,7 +39,7 @@ Besides, this is a pure __intraday strategy__. That means it won't leave any ope
 
 ### To sum up ###
 ```
-TyrionStrategy rules:
+DaenerysStrategy rules:
 
   * Entry: Price breaks above RSI buy level (long entry) or price breaks below RSI sell level (short entry)
   * Exit: Set a fixed Stop Loss and closes the position on a reversal signal
@@ -48,7 +48,7 @@ TyrionStrategy rules:
 
 ### Show me the code ###
 
-Here is a simplified C# source code of Tyrion's _OnNewBar()_ function. The complete code is all contained in [DaenerysStrategy.cs] along with comments and definition of parameters.
+Here is a simplified C# source code of Daenerys' _OnNewBar()_ function. The complete code is all contained in [DaenerysStrategy.cs] along with comments and definition of parameters.
 
 ```csharp
 decimal stopMargin = (int)this.GetInputParameter("Catastrophic Stop Loss ticks distance") * this.GetMainChart().Symbol.TickSize;
@@ -112,7 +112,7 @@ Quick Start
 * Create a free account to access TradingMotionAPI (required). It can be created from TradingMotionSDK Toolkit (the desktop application)
 * Clone the repository:
 ```sh
-git clone https://github.com/victormartingarcia/tyrion-trading-strategy-csharp
+git clone https://github.com/victormartingarcia/daenerys-trading-strategy-csharp
 ```
 * Open Visual Studio and load solution _DaenerysStrategy/DaenerysStrategy.sln_
 * Edit _app.config_ file adding your TradingMotionAPI credentials on _appSettings_ section
