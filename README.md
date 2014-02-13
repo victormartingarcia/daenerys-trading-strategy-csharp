@@ -15,7 +15,7 @@ Table of Contents
 Overview
 ----
 
-Daenerys is a trading algorithm written in C# using the [TradingMotion SDK] development tools (there is a [VB.net] port too).
+Daenerys is a trading algorithm written in C# using the [TradingMotion SDK] development tools (there is a [VB.net port] too).
 
 ![OHLC example chart](markdown_files/OHLC.png)
 <sub>__Image footnote:__ Example of Daenerys OHLC financial chart showing some automatic trades</sub>
